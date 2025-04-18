@@ -1,0 +1,67 @@
+[
+  {
+    "id": 11,
+    "title": "Web Development",
+    "des": "Building dynamic, responsive, and accessible web applications using modern frameworks and standards.",
+    "icon": "FaLaptopCode",
+    "path": "/web-development"
+  },
+  {
+    "id": 7,
+    "title": "Data Analytics & Visualization",
+    "des": "Collecting, analyzing, and presenting data-driven insights using statistical methods and visualization tools.",
+    "icon": "MdAnalytics",
+    "path": "/analytics"
+  },
+  {
+    "id": 2,
+    "title": "App Development",
+    "des": "Building scalable cross-platform applications with modern frameworks and cloud-native architectures.",
+    "icon": "AiFillAppstore",
+    "path": "/app-development"
+  },
+  {
+    "id": 3,
+    "title": "SEO Optimization",
+    "des": "Comprehensive SEO strategies to boost organic traffic and improve search engine rankings.",
+    "icon": "SiProgress",
+    "path": "/seo-optimization"
+  },
+  {
+    "id": 4,
+    "title": "Mobile Development",
+    "des": "Native and hybrid mobile app development with focus on performance and user experience.",
+    "icon": "FaMobile",
+    "path": "/mobile-development"
+  },
+
+  {
+    "id": 6,
+    "title": "Web Hosting",
+    "des": "Reliable hosting solutions with 99.9% uptime and enterprise-grade security measures.",
+    "icon": "FaGlobe",
+    "path": "/web-hosting"
+  },
+
+  {
+    "id": 8,
+    "title": "Database Management",
+    "des": "Designing, implementing, and maintaining relational and NoSQL databases to ensure data integrity and performance.",
+    "icon": "FaDatabase",
+    "path": "/database-management"
+  },
+  {
+    "id": 9,
+    "title": "Cloud Computing & Virtualization",
+    "des": "Deploying and managing scalable applications in cloud environments using virtualization and containerization technologies.",
+    "icon": "FaCloud",
+    "path": "/cloud-computing-virtualization"
+  },
+  {
+    "id": 10,
+    "title": "Computer Networks & Cybersecurity Fundamentals",
+    "des": "Implementing and securing network infrastructures, understanding protocols, and applying cybersecurity best practices.",
+    "icon": "GiNetworkBars",
+    "path": "/computer-networks-cybersecurity"
+  }
+]

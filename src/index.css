@@ -1,0 +1,14 @@
+@import "tailwindcss";
+/* Fix slider track alignment */
+.slick-track {
+  display: flex !important;
+  gap: 16px;
+}
+
+.slick-slide {
+  height: auto;
+}
+
+.slick-slide > div {
+  height: 100%;
+}

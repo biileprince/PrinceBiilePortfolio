@@ -1,0 +1,201 @@
+[
+  {
+    "id": 1,
+    "title": "Social Media Clone",
+    "description": "Full-stack social media platform with real-time features",
+    "image": "./images/avatar-3.png",
+    "tags": ["Web", "Full Stack"],
+    "techStack": ["React", "Node.js", "MongoDB", "Socket.io"],
+    "features": ["Real-time messaging", "Post sharing", "User authentication"],
+    "links": {
+      "github": "#",
+      "live": "#"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Mobile Fitness App",
+    "description": "Cross-platform fitness tracking application",
+    "image": "./images/Project2.jpg",
+    "tags": ["Mobile", "Health"],
+    "techStack": ["React Native", "Firebase", "TypeScript"],
+    "features": ["Workout tracking", "Progress analytics", "Social sharing"],
+    "links": {
+      "github": "#",
+      "live": "#"
+    }
+  },
+  {
+    "id": 3,
+    "title": "E‑Commerce Platform",
+    "description": "Scalable online store with shopping cart and payment integration",
+    "image": "./images/Project3.jpg",
+    "tags": ["Web", "Full Stack", "E‑commerce"],
+    "techStack": ["Next.js", "Express", "MongoDB", "Stripe"],
+    "features": ["Product catalog", "Shopping cart", "Payment integration"],
+    "links": {
+      "github": "#",
+      "live": "#"
+    }
+  },
+  {
+    "id": 4,
+    "title": "Chat Application",
+    "description": "Real‑time chat app supporting one‑to‑one and group conversations",
+    "image": "./images/Project4.jpg",
+    "tags": ["Web", "Real‑Time"],
+    "techStack": ["Vue.js", "Firebase", "Socket.io"],
+    "features": ["One‑to‑one chat", "Group chat", "Online presence"],
+    "links": {
+      "github": "#",
+      "live": "#"
+    }
+  },
+  {
+    "id": 5,
+    "title": "Portfolio Website",
+    "description": "Developer portfolio with blog and contact form",
+    "image": "./images/Project5.jpg",
+    "tags": ["Web", "Frontend"],
+    "techStack": ["Gatsby", "GraphQL", "Styled Components"],
+    "features": ["Responsive design", "Blog integration", "Contact form"],
+    "links": {
+      "github": "#",
+      "live": "#"
+    }
+  },
+  {
+    "id": 6,
+    "title": "Weather Dashboard",
+    "description": "Interactive dashboard displaying current weather and forecasts",
+    "image": "./images/Project6.jpg",
+    "tags": ["Web", "Utility"],
+    "techStack": ["React", "TypeScript", "OpenWeather API"],
+    "features": ["Current weather", "7‑day forecast", "Location search"],
+    "links": {
+      "github": "#",
+      "live": "#"
+    }
+  },
+  {
+    "id": 7,
+    "title": "Task Manager",
+    "description": "Productivity app for creating and organizing tasks",
+    "image": "./images/Project7.jpg",
+    "tags": ["Web", "Productivity"],
+    "techStack": ["Angular", "Node.js", "PostgreSQL"],
+    "features": ["Task creation", "Due date reminders", "Drag‑and‑drop"],
+    "links": {
+      "github": "#",
+      "live": "#"
+    }
+  },
+  {
+    "id": 8,
+    "title": "Blog Platform",
+    "description": "Full‑stack blogging platform with comments and user profiles",
+    "image": "./images/Project8.jpg",
+    "tags": ["Web", "Full Stack", "Content"],
+    "techStack": ["Django", "Python", "SQLite"],
+    "features": ["Post editor", "Comment system", "User profiles"],
+    "links": {
+      "github": "#",
+      "live": "#"
+    }
+  },
+  {
+    "id": 9,
+    "title": "E‑Learning Platform",
+    "description": "Online learning portal with video courses and quizzes",
+    "image": "./images/Project9.jpg",
+    "tags": ["Web", "Education"],
+    "techStack": ["React", "Firebase", "Redux"],
+    "features": ["Course catalog", "Video streaming", "Progress tracking"],
+    "links": {
+      "github": "#",
+      "live": "#"
+    }
+  },
+  {
+    "id": 10,
+    "title": "Recipe Finder",
+    "description": "Mobile app for searching and saving recipes",
+    "image": "./images/Project10.jpg",
+    "tags": ["Mobile", "Food"],
+    "techStack": ["Flutter", "Dart", "Spoonacular API"],
+    "features": ["Ingredient search", "Recipe details", "Shopping list"],
+    "links": {
+      "github": "#",
+      "live": "#"
+    }
+  },
+  {
+    "id": 11,
+    "title": "Travel Booking System",
+    "description": "Platform for searching and booking flights and hotels",
+    "image": "./images/Project11.jpg",
+    "tags": ["Web", "Travel"],
+    "techStack": ["Ruby on Rails", "PostgreSQL", "Bootstrap"],
+    "features": ["Flight search", "Hotel booking", "Payment gateway"],
+    "links": {
+      "github": "#",
+      "live": "#"
+    }
+  },
+  {
+    "id": 12,
+    "title": "Crypto Dashboard",
+    "description": "Real‑time cryptocurrency price tracker and portfolio manager",
+    "image": "./images/Project12.jpg",
+    "tags": ["Web", "Finance"],
+    "techStack": ["React", "Redux", "CoinGecko API"],
+    "features": ["Price tracking", "Portfolio management", "Price alerts"],
+    "links": {
+      "github": "#",
+      "live": "#"
+    }
+  },
+  {
+    "id": 13,
+    "title": "IoT Home Automation",
+    "description": "Control and monitor smart home devices remotely",
+    "image": "./images/Project13.jpg",
+    "tags": ["Web", "IoT"],
+    "techStack": ["Node.js", "MQTT", "Raspberry Pi"],
+    "features": ["Device control", "Schedule automation", "Sensor monitoring"],
+    "links": {
+      "github": "#",
+      "live": "#"
+    }
+  },
+  {
+    "id": 14,
+    "title": "AR/VR Tour App",
+    "description": "Augmented reality app for interactive virtual tours",
+    "image": "./images/Project14.jpg",
+    "tags": ["Mobile"],
+    "techStack": ["Unity", "ARCore"],
+    "features": ["3D tour", "Interactive hotspots", "GPS integration"],
+    "links": {
+      "github": "#",
+      "live": "#"
+    }
+  },
+  {
+    "id": 15,
+    "title": "AI Customer Support Bot",
+    "description": "Conversational AI bot for automated customer support",
+    "image": "./images/Project15.jpg",
+    "tags": ["Web", "AI"],
+    "techStack": ["Node.js", "Dialogflow", "TypeScript"],
+    "features": [
+      "Natural language understanding",
+      "Multi‑channel support",
+      "Analytics dashboard"
+    ],
+    "links": {
+      "github": "#",
+      "live": "#"
+    }
+  }
+]
