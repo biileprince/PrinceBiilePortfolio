@@ -15,7 +15,7 @@ const FeatureCard = ({ item, onClick, techStack }) => {
 
         <div className="space-y-4">
           <h2 className="text-xl font-semibold text-slate-200">{item.title}</h2>
-          <p className="text-slate-400 leading-relaxed line-clamp-3">
+          <p className="text-slate-400 leading-relaxed line-clamp-4">
             {item.des}
           </p>
 

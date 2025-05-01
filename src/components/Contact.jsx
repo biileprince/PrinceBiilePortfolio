@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import {
   FaFacebookF,
@@ -8,6 +8,7 @@ import {
   FaRegEnvelope,
 } from "react-icons/fa";
 import { FiSend } from "react-icons/fi";
+import emailjs from "emailjs-com";
 import Title from "./Title";
 import { animations } from "../utils/animations";
 import contactImg from "../assets/contactImg.jpg";
@@ -21,34 +22,41 @@ const Contact = () => {
     message: "",
   });
   const [status, setStatus] = useState({ type: "", message: "" });
+  const [isLoading, setIsLoading] = useState(false);
+
+  // Initialize EmailJS
+  useEffect(() => {
+    // emailjs.init(process.env.REACT_APP_EMAILJS_USER_ID);
+  }, []);
 
   const contactInfo = {
-    name: "John Doe",
-    role: "Full Stack Developer",
-    bio: "Let's create something remarkable together. Reach out for collaborations, opportunities, or just to say hello!",
-    phone: "+1 (555) 123-4567",
-    email: "john.doe@devport.com",
+    name: "Prince Yennuyar Biile",
+    role: "Full Stack Developer & IT Student",
+    bio: "Let's collaborate on innovative tech solutions! Reach out for opportunities, projects, or tech discussions.",
+    phone: "+233 555 902 675",
+    email: "biileprinceyennuyar5@gmail.com",
     socials: [
-      { icon: <FaFacebookF />, link: "#" },
-      { icon: <FaTwitter />, link: "#" },
-      { icon: <FaLinkedinIn />, link: "#" },
+      { icon: <FaLinkedinIn />, link: "https://linkedin.com/in/your-profile" },
+      { icon: <FaFacebookF />, link: "https://facebook.com/your-profile" },
+      { icon: <FaTwitter />, link: "https://twitter.com/your-handle" },
     ],
   };
 
   const validateForm = () => {
     const { name, phone, email, subject, message } = formData;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const phoneRegex = /^\+?[1-9]\d{1,14}$/;
+    const phoneRegex = /^\+?233[0-9]{9}$/; // Ghana phone number validation
 
     if (!name.trim()) return "Name is required";
-    if (!phoneRegex.test(phone)) return "Valid phone number required";
+    if (!phoneRegex.test(phone))
+      return "Valid Ghanaian phone number required (e.g., +233...)";
     if (!emailRegex.test(email)) return "Valid email required";
     if (!subject.trim()) return "Subject is required";
     if (!message.trim()) return "Message is required";
     return null;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const error = validateForm();
 
@@ -57,14 +65,32 @@ const Contact = () => {
       return;
     }
 
-    // Simulate API call
-    setStatus({
-      type: "success",
-      message: `Thank you ${formData.name}, your message has been sent!`,
-    });
-    setFormData({ name: "", phone: "", email: "", subject: "", message: "" });
+    setIsLoading(true);
 
-    setTimeout(() => setStatus({ type: "", message: "" }), 5000);
+    try {
+      await emailjs
+        .sendForm
+        // process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        // process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        // e.target,
+        // process.env.REACT_APP_EMAILJS_USER_ID
+        ();
+
+      setStatus({
+        type: "success",
+        message: `Thank you ${formData.name}, your message has been sent!`,
+      });
+      setFormData({ name: "", phone: "", email: "", subject: "", message: "" });
+    } catch (error) {
+      setStatus({
+        type: "error",
+        message:
+          "Failed to send message. Please try again or contact me directly at biileprinceyennuyar5@gmail.com",
+      });
+    } finally {
+      setIsLoading(false);
+      setTimeout(() => setStatus({ type: "", message: "" }), 5000);
+    }
   };
 
   const handleChange = (e) => {
@@ -127,6 +153,8 @@ const Contact = () => {
                       <motion.a
                         key={index}
                         href={social.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         whileHover={animations.hoverScale}
                         className="p-3 rounded-lg bg-slate-700/50 border border-slate-600 text-slate-300 hover:text-white transition-colors"
                       >
@@ -174,6 +202,7 @@ const Contact = () => {
                   onChange={handleChange}
                   className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-slate-200 focus:outline-none focus:border-blue-400 transition-colors"
                   placeholder="John Doe"
+                  disabled={isLoading}
                 />
               </div>
 
@@ -184,7 +213,8 @@ const Contact = () => {
                   value={formData.phone}
                   onChange={handleChange}
                   className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-slate-200 focus:outline-none focus:border-blue-400 transition-colors"
-                  placeholder="+1 555 123 4567"
+                  placeholder="+233 555 902 675"
+                  disabled={isLoading}
                 />
               </div>
             </div>
@@ -197,7 +227,8 @@ const Contact = () => {
                 value={formData.email}
                 onChange={handleChange}
                 className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-slate-200 focus:outline-none focus:border-blue-400 transition-colors"
-                placeholder="john.doe@email.com"
+                placeholder="biileprinceyennuyar5@gmail.com"
+                disabled={isLoading}
               />
             </div>
 
@@ -209,6 +240,7 @@ const Contact = () => {
                 onChange={handleChange}
                 className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-slate-200 focus:outline-none focus:border-blue-400 transition-colors"
                 placeholder="Project Inquiry"
+                disabled={isLoading}
               />
             </div>
 
@@ -221,16 +253,24 @@ const Contact = () => {
                 rows="5"
                 className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-slate-200 focus:outline-none focus:border-blue-400 transition-colors"
                 placeholder="Let's discuss your project..."
+                disabled={isLoading}
               />
             </div>
 
             <motion.button
-              whileHover={animations.hoverScale}
+              whileHover={!isLoading ? animations.hoverScale : {}}
               type="submit"
-              className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-blue-400/90 text-white rounded-lg hover:bg-blue-400 transition-colors"
+              className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-blue-400/90 text-white rounded-lg hover:bg-blue-400 transition-colors disabled:opacity-50"
+              disabled={isLoading}
             >
-              <FiSend className="text-lg" />
-              Send Message
+              {isLoading ? (
+                <div className="h-5 w-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
+              ) : (
+                <>
+                  <FiSend className="text-lg" />
+                  Send Message
+                </>
+              )}
             </motion.button>
           </motion.form>
         </motion.div>

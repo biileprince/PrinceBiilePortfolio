@@ -13,34 +13,13 @@
     "icon": "MdAnalytics",
     "path": "/analytics"
   },
-  {
-    "id": 2,
-    "title": "App Development",
-    "des": "Building scalable cross-platform applications with modern frameworks and cloud-native architectures.",
-    "icon": "AiFillAppstore",
-    "path": "/app-development"
-  },
+
   {
     "id": 3,
     "title": "SEO Optimization",
     "des": "Comprehensive SEO strategies to boost organic traffic and improve search engine rankings.",
     "icon": "SiProgress",
     "path": "/seo-optimization"
-  },
-  {
-    "id": 4,
-    "title": "Mobile Development",
-    "des": "Native and hybrid mobile app development with focus on performance and user experience.",
-    "icon": "FaMobile",
-    "path": "/mobile-development"
-  },
-
-  {
-    "id": 6,
-    "title": "Web Hosting",
-    "des": "Reliable hosting solutions with 99.9% uptime and enterprise-grade security measures.",
-    "icon": "FaGlobe",
-    "path": "/web-hosting"
   },
 
   {
@@ -56,12 +35,5 @@
     "des": "Deploying and managing scalable applications in cloud environments using virtualization and containerization technologies.",
     "icon": "FaCloud",
     "path": "/cloud-computing-virtualization"
-  },
-  {
-    "id": 10,
-    "title": "Computer Networks & Cybersecurity Fundamentals",
-    "des": "Implementing and securing network infrastructures, understanding protocols, and applying cybersecurity best practices.",
-    "icon": "GiNetworkBars",
-    "path": "/computer-networks-cybersecurity"
   }
 ]

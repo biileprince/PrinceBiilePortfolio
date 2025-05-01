@@ -7,10 +7,26 @@ export const dropdownAnimation = {
 };
 
 export const sidebarAnimation = {
-  initial: { x: "-100%" },
-  animate: { x: 0 },
-  exit: { x: "-100%" },
-  transition: { type: "tween", duration: 0.3 },
+  initial: {
+    x: "-100%",
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      stiffness: 300,
+      damping: 30,
+    },
+  },
+  exit: {
+    x: "-100%",
+    opacity: 0,
+    transition: {
+      duration: 0.3,
+    },
+  },
 };
 
 export const accordionAnimation = {

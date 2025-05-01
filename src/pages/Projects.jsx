@@ -25,6 +25,7 @@ const Projects = () => {
     const fetchProjects = async () => {
       const response = await fetch("/projects.json");
       const data = await response.json();
+
       setProjects(data);
       setFilteredProjects(data);
     };

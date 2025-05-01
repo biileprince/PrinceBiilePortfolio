@@ -29,24 +29,4 @@ export const testimonialsData = [
       platform: "Freelance · 2022",
     },
   },
-  {
-    name: "Michael Brown",
-    role: "CEO at Startup Hub",
-    image: "/images/testimonial3.jpg",
-    quote: "They transformed our vision into a reality with their expertise.",
-    project: {
-      title: "E-commerce Platform",
-      platform: "Partnership · 2021",
-    },
-  },
-  {
-    name: "Sophia Davis",
-    role: "Marketing Head at Creative Minds",
-    image: "/images/testimonial4.jpg",
-    quote: "Their innovative solutions helped us achieve our goals faster.",
-    project: {
-      title: "Marketing Automation Tool",
-      platform: "Contract · 2023",
-    },
-  },
 ];

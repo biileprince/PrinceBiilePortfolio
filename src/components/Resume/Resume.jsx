@@ -24,7 +24,7 @@ const ResumeTabs = ({ activeTab, setActiveTab }) => {
         <button
           key={tab.id}
           onClick={() => setActiveTab(tab.id)}
-          className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${
+          className={`px-6 py-2 rounded-full text-sm font-medium transition-colors hover:cursor-pointer ${
             activeTab === tab.id
               ? "bg-blue-400/10 text-blue-400"
               : "text-slate-400 hover:bg-slate-700/30"

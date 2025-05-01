@@ -7,8 +7,13 @@ import ErrorPage from "./components/ErrorPage";
 import Resume from "./components/Resume/Resume";
 import Contact from "./components/Contact";
 import { Skills } from "./components/Resume/Skills";
-import WebDevelopmentExpertise from "./pages/WebDevelopment";
+
 import DataAnalyticsExpertise from "./pages/DataAnalyticsExpertise";
+import WebDevelopmentExpertise from "./pages/WebDevelopment/WebDevelopment";
+import DatabaseManagementExpertise from "./pages/DatabaseManagementExpertise";
+import SeoExpertise from "./pages/SeoExpertise";
+import CloudComputingExpertise from "./pages/CloudComputingExpertise";
+import NotFound from "./pages/NotFound";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +32,17 @@ const router = createBrowserRouter([
       },
 
       { path: "web-development", element: <WebDevelopmentExpertise /> },
+      { path: "database-management", element: <DatabaseManagementExpertise /> },
+      { path: "seo-optimization", element: <SeoExpertise /> },
+      {
+        path: "cloud-computing-virtualization",
+        element: <CloudComputingExpertise />,
+      },
+
+      {
+        path: "*",
+        element: <NotFound />,
+      },
       {
         path: "projects/:projectId",
         element: <ProjectDetails />,

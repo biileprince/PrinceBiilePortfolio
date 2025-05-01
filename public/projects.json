@@ -38,19 +38,7 @@
       "live": "#"
     }
   },
-  {
-    "id": 4,
-    "title": "Chat Application",
-    "description": "Real‑time chat app supporting one‑to‑one and group conversations",
-    "image": "./images/Project4.jpg",
-    "tags": ["Web", "Real‑Time"],
-    "techStack": ["Vue.js", "Firebase", "Socket.io"],
-    "features": ["One‑to‑one chat", "Group chat", "Online presence"],
-    "links": {
-      "github": "#",
-      "live": "#"
-    }
-  },
+
   {
     "id": 5,
     "title": "Portfolio Website",
@@ -85,114 +73,6 @@
     "tags": ["Web", "Productivity"],
     "techStack": ["Angular", "Node.js", "PostgreSQL"],
     "features": ["Task creation", "Due date reminders", "Drag‑and‑drop"],
-    "links": {
-      "github": "#",
-      "live": "#"
-    }
-  },
-  {
-    "id": 8,
-    "title": "Blog Platform",
-    "description": "Full‑stack blogging platform with comments and user profiles",
-    "image": "./images/Project8.jpg",
-    "tags": ["Web", "Full Stack", "Content"],
-    "techStack": ["Django", "Python", "SQLite"],
-    "features": ["Post editor", "Comment system", "User profiles"],
-    "links": {
-      "github": "#",
-      "live": "#"
-    }
-  },
-  {
-    "id": 9,
-    "title": "E‑Learning Platform",
-    "description": "Online learning portal with video courses and quizzes",
-    "image": "./images/Project9.jpg",
-    "tags": ["Web", "Education"],
-    "techStack": ["React", "Firebase", "Redux"],
-    "features": ["Course catalog", "Video streaming", "Progress tracking"],
-    "links": {
-      "github": "#",
-      "live": "#"
-    }
-  },
-  {
-    "id": 10,
-    "title": "Recipe Finder",
-    "description": "Mobile app for searching and saving recipes",
-    "image": "./images/Project10.jpg",
-    "tags": ["Mobile", "Food"],
-    "techStack": ["Flutter", "Dart", "Spoonacular API"],
-    "features": ["Ingredient search", "Recipe details", "Shopping list"],
-    "links": {
-      "github": "#",
-      "live": "#"
-    }
-  },
-  {
-    "id": 11,
-    "title": "Travel Booking System",
-    "description": "Platform for searching and booking flights and hotels",
-    "image": "./images/Project11.jpg",
-    "tags": ["Web", "Travel"],
-    "techStack": ["Ruby on Rails", "PostgreSQL", "Bootstrap"],
-    "features": ["Flight search", "Hotel booking", "Payment gateway"],
-    "links": {
-      "github": "#",
-      "live": "#"
-    }
-  },
-  {
-    "id": 12,
-    "title": "Crypto Dashboard",
-    "description": "Real‑time cryptocurrency price tracker and portfolio manager",
-    "image": "./images/Project12.jpg",
-    "tags": ["Web", "Finance"],
-    "techStack": ["React", "Redux", "CoinGecko API"],
-    "features": ["Price tracking", "Portfolio management", "Price alerts"],
-    "links": {
-      "github": "#",
-      "live": "#"
-    }
-  },
-  {
-    "id": 13,
-    "title": "IoT Home Automation",
-    "description": "Control and monitor smart home devices remotely",
-    "image": "./images/Project13.jpg",
-    "tags": ["Web", "IoT"],
-    "techStack": ["Node.js", "MQTT", "Raspberry Pi"],
-    "features": ["Device control", "Schedule automation", "Sensor monitoring"],
-    "links": {
-      "github": "#",
-      "live": "#"
-    }
-  },
-  {
-    "id": 14,
-    "title": "AR/VR Tour App",
-    "description": "Augmented reality app for interactive virtual tours",
-    "image": "./images/Project14.jpg",
-    "tags": ["Mobile"],
-    "techStack": ["Unity", "ARCore"],
-    "features": ["3D tour", "Interactive hotspots", "GPS integration"],
-    "links": {
-      "github": "#",
-      "live": "#"
-    }
-  },
-  {
-    "id": 15,
-    "title": "AI Customer Support Bot",
-    "description": "Conversational AI bot for automated customer support",
-    "image": "./images/Project15.jpg",
-    "tags": ["Web", "AI"],
-    "techStack": ["Node.js", "Dialogflow", "TypeScript"],
-    "features": [
-      "Natural language understanding",
-      "Multi‑channel support",
-      "Analytics dashboard"
-    ],
     "links": {
       "github": "#",
       "live": "#"

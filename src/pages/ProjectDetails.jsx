@@ -7,7 +7,6 @@ import { FaArrowLeft, FaGlobe } from "react-icons/fa";
 const ProjectDetails = () => {
   const project = useLoaderData();
   const navigate = useNavigate();
-  console.log(project.image);
   return (
     <motion.div
       {...animations.scrollZoomIn}

@@ -1,4 +1,12 @@
-import { FaHome, FaBuilding, FaCogs, FaEnvelope } from "react-icons/fa";
+import {
+  FaHome,
+  FaBuilding,
+  FaCogs,
+  FaEnvelope,
+  FaTools,
+  FaCode,
+  FaFileAlt,
+} from "react-icons/fa";
 import { GiSkills } from "react-icons/gi";
 import { GrResume } from "react-icons/gr";
 
@@ -11,7 +19,8 @@ export const navigationItems = [
   {
     title: "Projects",
     path: "/projects",
-    icon: <FaBuilding size={20} />,
+    icon: <FaCode size={20} />,
+
     // subItems: [
     //   { title: "Web Development", path: "/projects/web" },
     //   { title: "Mobile Apps", path: "/projects/mobile" },
@@ -20,7 +29,7 @@ export const navigationItems = [
   {
     title: "Resume",
     path: "/resume",
-    icon: <GrResume size={20} />,
+    icon: <FaFileAlt size={20} />,
 
     // subItems: [
     //   { title: "Frontend", path: "/skills/frontend" },
@@ -40,7 +49,7 @@ export const navigationItems = [
   {
     title: "Skills",
     path: "/skills",
-    icon: <FaCogs size={20} />,
+    icon: <FaTools size={20} />,
   },
   {
     title: "Contact",

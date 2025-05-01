@@ -6,12 +6,29 @@ import {
   FaLinkedin,
   FaTwitter,
   FaRegEnvelope,
-  FaRocket,
+  FaCode,
 } from "react-icons/fa";
 import { navigationItems } from "../data/navItems";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const socialLinks = [
+    {
+      icon: FaGithub,
+      link: "https://github.com/yourusername",
+      label: "GitHub Profile",
+    },
+    {
+      icon: FaLinkedin,
+      link: "https://linkedin.com/in/yourprofile",
+      label: "LinkedIn Profile",
+    },
+    {
+      icon: FaTwitter,
+      link: "https://twitter.com/yourhandle",
+      label: "Twitter Profile",
+    },
+  ];
 
   return (
     <motion.footer
@@ -21,18 +38,19 @@ const Footer = () => {
       className="border-t border-slate-700/50 bg-slate-800/90 backdrop-blur-lg"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {/* Brand Section */}
           <motion.div {...animations.scrollSlideUp}>
             <div className="flex items-center mb-4">
               <span className="text-2xl font-bold text-white flex items-center">
-                <FaRocket className="mr-2 text-blue-400" />
-                DevPort
+                <FaCode className="mr-2 text-blue-400" />
+                Prince Y. Biile
               </span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed">
-              Crafting digital experiences through innovative development and
-              thoughtful design.
+              Full-stack developer specializing in modern web technologies and
+              cloud solutions. Turning ideas into functional digital
+              experiences.
             </p>
           </motion.div>
 
@@ -62,19 +80,21 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center text-slate-400 hover:text-white transition-colors">
                 <FaRegEnvelope className="mr-2" />
-                <a href="mailto:hello@devport.com" className="text-sm">
-                  hello@devport.com
+                <a
+                  href="mailto:biileprinceyennuyar5@gmail.com"
+                  className="text-sm"
+                >
+                  biileprinceyennuyar5@gmail.com
                 </a>
               </div>
               <div className="flex items-center mt-4 space-x-4">
-                {[
-                  { icon: FaGithub, link: "#" },
-                  { icon: FaLinkedin, link: "#" },
-                  { icon: FaTwitter, link: "#" },
-                ].map((social, idx) => (
+                {socialLinks.map((social, idx) => (
                   <motion.a
                     key={idx}
                     href={social.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={social.label}
                     whileHover={animations.hoverScale}
                     className="p-2 rounded-full bg-slate-700/50 border border-slate-600 text-slate-300 hover:text-white"
                   >
@@ -84,26 +104,6 @@ const Footer = () => {
               </div>
             </div>
           </motion.div>
-
-          {/* Newsletter */}
-          <motion.div {...animations.scrollSlideUp} className="space-y-4">
-            <h3 className="text-sm font-semibold text-white uppercase tracking-wider">
-              Newsletter
-            </h3>
-            <form className="space-y-4">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="w-full px-4 py-2 rounded-lg bg-slate-700/50 border border-slate-600 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
-              />
-              <button
-                type="submit"
-                className="w-full px-4 py-2 bg-blue-400/90 text-white rounded-lg hover:bg-blue-400 transition-colors"
-              >
-                Subscribe
-              </button>
-            </form>
-          </motion.div>
         </div>
 
         {/* Copyright */}
@@ -112,7 +112,7 @@ const Footer = () => {
           className="border-t border-slate-700/50 pt-8 text-center"
         >
           <p className="text-sm text-slate-500">
-            © {currentYear} DevPort. All rights reserved.
+            © {currentYear} Prince Yennuyar Biile. All rights reserved.
           </p>
         </motion.div>
       </div>
