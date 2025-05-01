@@ -21,9 +21,10 @@ import {
 } from "react-icons/si";
 import { motion } from "framer-motion";
 import { animations } from "../utils/animations";
-import images from "../assets/Images";
+
 import { TiVendorMicrosoft } from "react-icons/ti";
 import { useNavigate } from "react-router-dom";
+import images from "./../../public/images/Images";
 
 const socialLinks = [
   { icon: FaFacebookF, link: "https://web.facebook.com/prince.biile/" },
@@ -187,7 +188,7 @@ const Hero = () => {
               transition={animations.float.transition}
               loading="lazy"
               className="w-[300px] h-[400px] lg:w-[500px] lg:h-[680px] object-contain z-50"
-              src={"/public/images/biileprince.png"}
+              src={images.banner}
               alt="Profile Illustration"
             />
             <div className="absolute inset-0 bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm rounded-xl -z-10" />

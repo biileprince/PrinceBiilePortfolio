@@ -1,4 +1,4 @@
-import bannerImg from "./bannerImg.png";
+import bannerImg from "./biileprince.png";
 
 const images = {
   banner: bannerImg,
