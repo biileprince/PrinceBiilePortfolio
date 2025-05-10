@@ -1,30 +1,35 @@
 [
   {
-    "id": 1,
-    "title": "Social Media Clone",
-    "description": "Full-stack social media platform with real-time features",
-    "image": "./images/avatar-3.png",
-    "tags": ["Web", "Full Stack"],
-    "techStack": ["React", "Node.js", "MongoDB", "Socket.io"],
-    "features": ["Real-time messaging", "Post sharing", "User authentication"],
-    "links": {
-      "github": "#",
-      "live": "#"
-    }
-  },
-  {
     "id": 2,
-    "title": "Mobile Fitness App",
-    "description": "Cross-platform fitness tracking application",
-    "image": "./images/Project2.jpg",
-    "tags": ["Mobile", "Health"],
-    "techStack": ["React Native", "Firebase", "TypeScript"],
-    "features": ["Workout tracking", "Progress analytics", "Social sharing"],
+    "title": "Modern Food Delivery Platform",
+    "description": "A full-featured food ordering web application with restaurant-style browsing experience and seamless order management",
+    "image": "./images/food-delivery-project.png",
+    "tags": ["Web", "E-commerce", "Frontend"],
+    "techStack": [
+      "React.js",
+      "Context API",
+      "React Router",
+      "CSS3",
+      "Responsive Design",
+      "Local Storage"
+    ],
+    "features": [
+      "Dynamic food menu browsing with category filters",
+      "Real-time cart management with quantity controls",
+      "Mobile-first responsive interface",
+      "Order summary & checkout system",
+      "User authentication modal",
+      "Interactive restaurant-style menu display",
+      "Pagination for large menus",
+      "Promo code integration",
+      "Order tracking system"
+    ],
     "links": {
-      "github": "#",
-      "live": "#"
+      "github": "https://github.com/biileprince/Food-Delivery-App",
+      "live": "https://foodie-deliveryapp.netlify.app/"
     }
   },
+
   {
     "id": 3,
     "title": "E‑Commerce Platform",

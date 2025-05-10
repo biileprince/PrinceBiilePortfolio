@@ -15,17 +15,17 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: FaGithub,
-      link: "https://github.com/yourusername",
+      link: "https://github.com/biileprince",
       label: "GitHub Profile",
     },
     {
       icon: FaLinkedin,
-      link: "https://linkedin.com/in/yourprofile",
+      link: "https://www.linkedin.com/in/prince-biile-75343b244",
       label: "LinkedIn Profile",
     },
     {
       icon: FaTwitter,
-      link: "https://twitter.com/yourhandle",
+      link: "https://x.com/BiilePrince",
       label: "Twitter Profile",
     },
   ];

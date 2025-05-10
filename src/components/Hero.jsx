@@ -112,7 +112,7 @@ const Hero = () => {
           {/* Action Buttons */}
           <div className="flex flex-row gap-4">
             <motion.a
-              href="/public/PrinceBiile_CV.pdf"
+              href="/PrinceBiile_CV.pdf"
               download
               whileHover={animations.hoverScalebtn}
               className="flex items-center gap-2 px-6 py-3 bg-blue-400/90 text-white rounded-lg
