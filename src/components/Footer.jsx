@@ -9,6 +9,7 @@ import {
   FaCode,
 } from "react-icons/fa";
 import { navigationItems } from "../data/navItems";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -61,13 +62,13 @@ const Footer = () => {
             </h3>
             <nav className="space-y-2">
               {navigationItems.map((item) => (
-                <a
+                <Link
                   key={item.path}
-                  href={item.path}
+                  to={item.path}
                   className="block text-slate-400 hover:text-white text-sm transition-colors"
                 >
                   {item.title}
-                </a>
+                </Link>
               ))}
             </nav>
           </motion.div>

@@ -32,18 +32,38 @@
 
   {
     "id": 3,
-    "title": "E‑Commerce Platform",
-    "description": "Scalable online store with shopping cart and payment integration",
-    "image": "./images/Project3.jpg",
-    "tags": ["Web", "Full Stack", "E‑commerce"],
-    "techStack": ["Next.js", "Express", "MongoDB", "Stripe"],
-    "features": ["Product catalog", "Shopping cart", "Payment integration"],
+    "title": "SkyCommerce - Modern E-commerce Platform",
+    "description": "A responsive e-commerce platform featuring modern UI design with sky-themed aesthetics, comprehensive product browsing, cart management, and seamless checkout experience.",
+    "image": "./images/skycommerce-project.png",
+    "tags": ["Web", "E-commerce", "Full-stack", "Responsive"],
+    "techStack": [
+      "React.js",
+      "Tailwind CSS",
+      "Context API",
+      "React Router",
+      "Vite",
+      "Responsive Design",
+      "CSS Animations"
+    ],
+    "features": [
+      "Sky-themed UI with modern gradients and animations",
+      "Product browsing with category/subcategory filters",
+      "Responsive grid layout for product displays",
+      "Interactive cart management with real-time updates",
+      "Multi-step checkout process with payment options",
+      "User authentication system",
+      "Order tracking and history",
+      "Product detail pages with image galleries",
+      "Related products suggestions",
+      "Newsletter subscription",
+      "Mobile-optimized navigation",
+      "Loading skeletons for enhanced UX"
+    ],
     "links": {
-      "github": "#",
-      "live": "#"
+      "github": "https://github.com/yourusername/skycommerce",
+      "live": "https://skycommerce-demo.netlify.app/"
     }
   },
-
   {
     "id": 5,
     "title": "Portfolio Website",
