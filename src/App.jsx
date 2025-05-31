@@ -44,6 +44,9 @@ const router = createBrowserRouter([
         element: <NotFound />,
       },
       {
+        basename: "/",
+      },
+      {
         path: "projects/:projectId",
         element: <ProjectDetails />,
         loader: async ({ params }) => {
