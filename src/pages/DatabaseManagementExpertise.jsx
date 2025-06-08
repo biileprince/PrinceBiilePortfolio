@@ -1,67 +1,67 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { animations } from "../utils/animations";
-
-import {
-  FaDatabase,
-  FaServer,
-  FaShieldAlt,
-  FaSync,
-  FaChartBar,
-  FaRegClock,
-} from "react-icons/fa";
-import { SiApachecassandra, SiRedis, SiPostgresql } from "react-icons/si";
+import { FaDatabase, FaServer, FaCode, FaFileExcel } from "react-icons/fa";
+import { SiMongodb, SiMysql } from "react-icons/si";
 import Title from "./../components/Title";
 
 const DatabaseManagementExpertise = () => {
   const databaseFeatures = [
     {
       id: 1,
-      title: "Relational Databases",
-      des: "Enterprise-grade SQL solutions with ACID compliance and complex transaction support",
-      icon: <SiPostgresql className="text-4xl text-blue-400" />,
-      tech: ["PostgreSQL", "MySQL", "Oracle", "SQL Server"],
-      metrics: "99.999% Availability",
+      title: "SQL Databases",
+      des: "Designing and implementing relational databases with proper normalization and efficient querying",
+      icon: <SiMysql className="text-4xl text-blue-400" />,
+      tech: ["MySQL", "PostgreSQL", "SQLite", "MS Access"],
+      projects: [
+        "University course projects",
+        "Database Management coursework",
+      ],
     },
     {
       id: 2,
       title: "NoSQL Systems",
-      des: "Scalable schema-less databases for unstructured data and high-velocity workloads",
-      icon: <SiApachecassandra className="text-4xl text-blue-400" />,
-      tech: ["Cassandra", "MongoDB", "Couchbase", "DynamoDB"],
-      metrics: "1M+ Operations/sec",
+      des: "Working with document-based databases for flexible data structures in web applications",
+      icon: <SiMongodb className="text-4xl text-blue-400" />,
+      tech: ["MongoDB", "Mongoose ODM", "Atlas Cloud", "CRUD Operations"],
+      projects: ["Full-stack applications", "University projects"],
     },
     {
       id: 3,
-      title: "In-Memory Databases",
-      des: "Real-time data processing with sub-millisecond response times",
-      icon: <SiRedis className="text-4xl text-blue-400" />,
-      tech: ["Redis", "Memcached", "Hazelcast", "Aerospike"],
-      metrics: "500k TPS Capacity",
+      title: "Database Design",
+      des: "Creating efficient database schemas with proper relationships and normalization",
+      icon: <FaDatabase className="text-4xl text-blue-400" />,
+      tech: ["ER Modeling", "Normalization", "Schema Design", "Indexing"],
+      projects: ["Academic projects", "Web application backends"],
     },
     {
       id: 4,
-      title: "Data Replication",
-      des: "Multi-region synchronization with conflict resolution and failover mechanisms",
-      icon: <FaSync className="text-4xl text-blue-400" />,
-      tech: ["CDC", "Logical Replication", "Sharding", "Cluster Sync"],
-      metrics: "<10ms Replication Lag",
+      title: "Data Automation",
+      des: "Building data processing systems with Excel and automation tools",
+      icon: <FaFileExcel className="text-4xl text-blue-400" />,
+      tech: ["Excel Formulas", "VBA", "Mail Merge", "Data Transformation"],
+      projects: ["Student Assessment System", "Grade automation"],
     },
     {
       id: 5,
-      title: "Security & Compliance",
-      des: "Enterprise-grade security with RBAC, encryption, and audit trails",
-      icon: <FaShieldAlt className="text-4xl text-blue-400" />,
-      tech: ["TDE", "SSL", "VPC", "SOC2 Compliance"],
-      metrics: "Zero Audit Findings",
+      title: "Backend Integration",
+      des: "Connecting databases to Node.js applications with proper API design",
+      icon: <FaServer className="text-4xl text-blue-400" />,
+      tech: ["Node.js", "Express", "REST APIs", "Mongoose"],
+      projects: ["MERN stack applications", "University assignments"],
     },
     {
       id: 6,
-      title: "Performance Tuning",
-      des: "Query optimization and index management for peak database performance",
-      icon: <FaRegClock className="text-4xl text-blue-400" />,
-      tech: ["Query Plan Analysis", "Index Optimization", "Partitioning"],
-      metrics: "10x Query Speed Boost",
+      title: "Data Management",
+      des: "Implementing CRUD operations and data validation in applications",
+      icon: <FaCode className="text-4xl text-blue-400" />,
+      tech: [
+        "CRUD Operations",
+        "Data Validation",
+        "Error Handling",
+        "API Design",
+      ],
+      projects: ["Full-stack projects", "Academic implementations"],
     },
   ];
 
@@ -71,8 +71,8 @@ const DatabaseManagementExpertise = () => {
       className="w-full py-20 border-b border-slate-700/50"
     >
       <Title
-        title="Database Management"
-        des="Enterprise Data Infrastructure Solutions"
+        title="Data Management Skills"
+        des="Database Design & Implementation"
         align="center"
       />
 
@@ -90,44 +90,37 @@ const DatabaseManagementExpertise = () => {
         ))}
       </div>
 
-      {/* Database Methodologies */}
+      {/* Database Principles */}
       <div className="max-w-7xl mx-auto px-4 sm:px-8 mt-20">
         <motion.div
           {...animations.fadeIn}
           className="bg-slate-800/50 p-8 rounded-xl border border-slate-700/50"
         >
           <h3 className="text-2xl font-semibold text-slate-200 mb-6">
-            Core Principles
+            Core Database Principles
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="space-y-4">
-              <div className="flex items-center gap-3 text-blue-400">
-                <FaServer className="text-xl" />
-                <span className="text-lg">ACID Compliance</span>
-              </div>
+              <div className="text-blue-400 text-lg">ACID Compliance</div>
               <p className="text-slate-400">
-                Atomicity, Consistency, Isolation, and Durability guarantees for
-                critical transactions
+                Ensuring data integrity through Atomicity, Consistency,
+                Isolation, and Durability
               </p>
             </div>
 
             <div className="space-y-4">
-              <div className="flex items-center gap-3 text-blue-400">
-                <FaChartBar className="text-xl" />
-                <span className="text-lg">Horizontal Scaling</span>
-              </div>
+              <div className="text-blue-400 text-lg">Normalization</div>
               <p className="text-slate-400">
-                Sharding and clustering strategies for petabyte-scale datasets
+                Structuring databases to reduce redundancy and improve data
+                integrity
               </p>
             </div>
 
             <div className="space-y-4">
-              <div className="flex items-center gap-3 text-blue-400">
-                <FaDatabase className="text-xl" />
-                <span className="text-lg">Disaster Recovery</span>
-              </div>
+              <div className="text-blue-400 text-lg">CRUD Operations</div>
               <p className="text-slate-400">
-                Point-in-time recovery with RPO 1min and RTO 5min
+                Implementing Create, Read, Update, and Delete functionality in
+                applications
               </p>
             </div>
           </div>
@@ -137,7 +130,6 @@ const DatabaseManagementExpertise = () => {
   );
 };
 
-// Database Feature Card Component
 const DatabaseFeatureCard = ({ item }) => {
   return (
     <motion.div
@@ -146,12 +138,7 @@ const DatabaseFeatureCard = ({ item }) => {
       whileHover={animations.hoverScale}
     >
       <div className="space-y-6">
-        <div className="flex justify-between items-start">
-          <div className="text-blue-400">{item.icon}</div>
-          <span className="px-3 py-1 text-xs bg-blue-400/10 text-blue-400 rounded-full">
-            {item.metrics}
-          </span>
-        </div>
+        <div className="text-blue-400">{item.icon}</div>
 
         <div className="space-y-4">
           <h2 className="text-xl font-semibold text-slate-200">{item.title}</h2>
@@ -170,12 +157,12 @@ const DatabaseFeatureCard = ({ item }) => {
         </div>
       </div>
 
-      {/* Status Indicator */}
+      {/* Project References */}
       <div className="mt-6 pt-4 border-t border-slate-700/50">
-        <div className="flex items-center gap-2 text-slate-400 text-sm">
-          <div className="w-2 h-2 bg-green-400 rounded-full animate-pulsedatabase-management" />
-          <span>Operational Excellence Certified</span>
-        </div>
+        <p className="text-sm text-slate-400">
+          <span className="text-blue-400">Applied in:</span>{" "}
+          {item.projects.join(", ")}
+        </p>
       </div>
     </motion.div>
   );

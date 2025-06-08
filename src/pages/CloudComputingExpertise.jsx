@@ -1,81 +1,81 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { animations } from "../utils/animations";
-
 import {
-  FaCloud,
+  FaAws,
   FaServer,
   FaShieldAlt,
   FaNetworkWired,
   FaDatabase,
-  FaRegClock,
-  FaAws,
+  FaUserCheck,
 } from "react-icons/fa";
-import { SiDocker, SiTerraform } from "react-icons/si";
 import Title from "./../components/Title";
 
 const CloudComputingExpertise = () => {
   const cloudFeatures = [
     {
       id: 1,
-      title: "Cloud Fundamentals",
-      des: "Understanding core cloud concepts: IaaS, PaaS, SaaS, and public/private/hybrid cloud models",
-      icon: <FaCloud className="text-4xl text-blue-400" />,
+      title: "AWS Cloud Practitioner",
+      des: "Certified in AWS fundamentals including global infrastructure, core services, and cloud concepts",
+      icon: <FaAws className="text-4xl text-blue-400" />,
       concepts: [
         "EC2 Instances",
         "S3 Storage",
-        "VPC Networking",
-        "CloudFormation",
+        "IAM Security",
+        "Cloud Economics",
       ],
-      tip: "Start with AWS Free Tier for hands-on practice",
+      certification: "AWS Certified Cloud Practitioner",
+      date: "2024",
     },
     {
       id: 2,
-      title: "Virtualization Basics",
-      des: "Mastering hypervisors (Type 1/2), containers, and resource allocation strategies",
+      title: "Compute Services",
+      des: "Deploying and managing virtual servers with EC2, serverless with Lambda, and container services",
       icon: <FaServer className="text-4xl text-blue-400" />,
-      concepts: ["EC2", "Lambda", "Docker", "Hyper-V"],
-      tip: "Practice creating AMIs in AWS",
+      concepts: ["EC2", "Lambda", "Elastic Beanstalk", "ECS"],
+      projects: ["Deployed web applications", "Serverless APIs"],
     },
     {
       id: 3,
       title: "Cloud Security",
-      des: "Implementing IAM policies, security groups, and encryption best practices",
+      des: "Implementing IAM policies, security groups, encryption, and compliance best practices",
       icon: <FaShieldAlt className="text-4xl text-blue-400" />,
-      concepts: ["IAM Roles", "KMS", "WAF", "Security Hub"],
-      tip: "Follow least privilege principle",
+      concepts: ["IAM Roles", "Security Groups", "KMS", "WAF"],
+      certification: "AWS re/Start Graduate",
+      date: "2024",
     },
     {
       id: 4,
-      title: "Networking Essentials",
-      des: "Configuring VPCs, subnets, route tables, and load balancers",
+      title: "Networking",
+      des: "Configuring VPCs, subnets, route tables, and content delivery networks",
       icon: <FaNetworkWired className="text-4xl text-blue-400" />,
       concepts: ["VPC", "Route 53", "CloudFront", "Direct Connect"],
-      tip: "Use CIDR notation practice",
+      projects: ["Networked applications", "Content delivery solutions"],
     },
     {
       id: 5,
       title: "Storage Solutions",
-      des: "Working with S3 buckets, EBS volumes, and Glacier archival",
+      des: "Working with S3 buckets, EBS volumes, and archival storage options",
       icon: <FaDatabase className="text-4xl text-blue-400" />,
-      concepts: ["S3 Classes", "EBS Types", "EFS", "Storage Gateway"],
-      tip: "Understand durability vs availability",
+      concepts: ["S3", "EBS", "EFS", "Glacier"],
+      projects: ["Static website hosting", "File storage systems"],
     },
     {
       id: 6,
-      title: "Auto Scaling",
-      des: "Implementing load balancing and automatic resource scaling",
-      icon: <FaRegClock className="text-4xl text-blue-400" />,
-      concepts: ["Auto Scaling Groups", "ELB", "CloudWatch", "Spot Instances"],
-      tip: "Master scaling policies configuration",
+      title: "Identity & Access",
+      des: "Managing users, roles, and permissions with AWS Identity services",
+      icon: <FaUserCheck className="text-4xl text-blue-400" />,
+      concepts: ["IAM Users", "Policies", "MFA", "Roles"],
+      certification: "AWS Security Best Practices",
+      date: "2024",
     },
   ];
 
   return (
     <section id="cloud" className="w-full py-20 border-b border-slate-700/50">
       <Title
-        title="Cloud Computing"
-        des="AWS Foundational Knowledge & Best Practices"
+        title="Cloud Computing Expertise"
+        des="AWS Certified Solutions & Services"
         align="center"
       />
 
@@ -93,42 +93,85 @@ const CloudComputingExpertise = () => {
         ))}
       </div>
 
-      {/* Learning Path */}
+      {/* AWS Skills Showcase */}
       <div className="max-w-7xl mx-auto px-4 sm:px-8 mt-20">
         <motion.div
           {...animations.fadeIn}
           className="bg-slate-800/50 p-8 rounded-xl border border-slate-700/50"
         >
-          <h3 className="text-2xl font-semibold text-slate-200 mb-6">
-            AWS Learning Path
-          </h3>
+          <div className="flex flex-col md:flex-row justify-between items-center mb-8">
+            <div>
+              <h3 className="text-2xl font-semibold text-slate-200">
+                AWS re/Start Program Completion
+              </h3>
+              <p className="text-blue-400 mt-2">
+                AmaliTech Training Program • 2024
+              </p>
+            </div>
+            <div className="mt-4 md:mt-0">
+              <FaAws className="text-4xl text-orange-500" />
+            </div>
+          </div>
+
           <div className="grid md:grid-cols-3 gap-8">
             <div className="space-y-4">
-              <div className="flex items-center gap-3 text-blue-400">
-                <FaAws className="text-xl" />
-                <span className="text-lg">Core Services</span>
-              </div>
-              <p className="text-slate-400">
-                EC2, S3, VPC, IAM, Lambda, CloudFormation
-              </p>
+              <div className="text-blue-400 text-lg">Core AWS Services</div>
+              <ul className="text-slate-400 space-y-2">
+                <li className="flex items-center">
+                  <span className="text-blue-400 mr-2">•</span> EC2 Compute
+                </li>
+                <li className="flex items-center">
+                  <span className="text-blue-400 mr-2">•</span> S3 Storage
+                </li>
+                <li className="flex items-center">
+                  <span className="text-blue-400 mr-2">•</span> VPC Networking
+                </li>
+                <li className="flex items-center">
+                  <span className="text-blue-400 mr-2">•</span> IAM Security
+                </li>
+              </ul>
             </div>
 
             <div className="space-y-4">
-              <div className="flex items-center gap-3 text-blue-400">
-                <SiDocker className="text-xl" />
-                <span className="text-lg">Containerization</span>
-              </div>
-              <p className="text-slate-400">
-                ECS, ECR, EKS, Docker fundamentals
-              </p>
+              <div className="text-blue-400 text-lg">Technical Skills</div>
+              <ul className="text-slate-400 space-y-2">
+                <li className="flex items-center">
+                  <span className="text-blue-400 mr-2">•</span> Linux
+                  Administration
+                </li>
+                <li className="flex items-center">
+                  <span className="text-blue-400 mr-2">•</span> Python Scripting
+                </li>
+                <li className="flex items-center">
+                  <span className="text-blue-400 mr-2">•</span> Networking
+                  Fundamentals
+                </li>
+                <li className="flex items-center">
+                  <span className="text-blue-400 mr-2">•</span> Database
+                  Concepts
+                </li>
+              </ul>
             </div>
 
             <div className="space-y-4">
-              <div className="flex items-center gap-3 text-blue-400">
-                <SiTerraform className="text-xl" />
-                <span className="text-lg">Infrastructure as Code</span>
-              </div>
-              <p className="text-slate-400">Terraform, CloudFormation, CDK</p>
+              <div className="text-blue-400 text-lg">Professional Skills</div>
+              <ul className="text-slate-400 space-y-2">
+                <li className="flex items-center">
+                  <span className="text-blue-400 mr-2">•</span> Troubleshooting
+                </li>
+                <li className="flex items-center">
+                  <span className="text-blue-400 mr-2">•</span> Agile
+                  Methodology
+                </li>
+                <li className="flex items-center">
+                  <span className="text-blue-400 mr-2">•</span> Technical
+                  Documentation
+                </li>
+                <li className="flex items-center">
+                  <span className="text-blue-400 mr-2">•</span> Incident
+                  Response
+                </li>
+              </ul>
             </div>
           </div>
         </motion.div>
@@ -145,7 +188,14 @@ const CloudFeatureCard = ({ item }) => {
       whileHover={animations.hoverScale}
     >
       <div className="space-y-6">
-        <div className="text-blue-400">{item.icon}</div>
+        <div className="flex justify-between items-start">
+          <div className="text-blue-400">{item.icon}</div>
+          {item.certification && (
+            <span className="px-3 py-1 text-xs bg-blue-400/10 text-blue-400 rounded-full">
+              Certified
+            </span>
+          )}
+        </div>
 
         <div className="space-y-4">
           <h2 className="text-xl font-semibold text-slate-200">{item.title}</h2>
@@ -165,10 +215,19 @@ const CloudFeatureCard = ({ item }) => {
       </div>
 
       <div className="mt-6 pt-4 border-t border-slate-700/50">
-        <div className="text-sm text-blue-400 flex items-center gap-2">
-          <span className="text-xs">💡 Study Tip:</span>
-          {item.tip}
-        </div>
+        {item.certification ? (
+          <div className="text-sm text-blue-400">
+            <div className="font-medium">{item.certification}</div>
+            <div className="text-slate-400 text-xs mt-1">
+              Completed {item.date}
+            </div>
+          </div>
+        ) : (
+          <div className="text-sm text-blue-400">
+            <span className="font-medium">Applied in:</span>{" "}
+            <span className="text-slate-400">{item.projects.join(", ")}</span>
+          </div>
+        )}
       </div>
     </motion.div>
   );

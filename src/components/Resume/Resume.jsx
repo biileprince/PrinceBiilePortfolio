@@ -12,7 +12,7 @@ const ResumeTabs = ({ activeTab, setActiveTab }) => {
     { id: "education", label: "Education" },
     { id: "experience", label: "Experience" },
     { id: "skills", label: "Skills" },
-    { id: "achievements", label: "Achievements" },
+    { id: "achievements", label: "Certifications" },
   ];
 
   return (
@@ -24,9 +24,9 @@ const ResumeTabs = ({ activeTab, setActiveTab }) => {
         <button
           key={tab.id}
           onClick={() => setActiveTab(tab.id)}
-          className={`px-6 py-2 rounded-full text-sm font-medium transition-colors hover:cursor-pointer ${
+          className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${
             activeTab === tab.id
-              ? "bg-blue-400/10 text-blue-400"
+              ? "bg-blue-400/10 text-blue-400 border border-blue-400/20"
               : "text-slate-400 hover:bg-slate-700/30"
           }`}
         >
@@ -45,7 +45,7 @@ const Resume = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Title
           title="Professional Journey"
-          des="Experience & Qualifications"
+          des="Education, Experience & Technical Expertise"
           align="center"
         />
 
@@ -76,18 +76,19 @@ const Resume = () => {
           {activeTab === "skills" && <Skills />}
 
           {activeTab === "achievements" && (
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {achievements.map((item) => (
                 <motion.div
                   key={item.title}
                   {...animations.scrollSlideUp}
-                  className="p-6 bg-slate-800/50 rounded-xl border border-slate-700/50"
+                  className="p-6 bg-slate-800/50 rounded-xl border border-slate-700/50 flex flex-col"
                 >
+                  <div className="text-blue-400 mb-3">{item.icon}</div>
                   <div className="text-blue-400 text-sm mb-2">{item.year}</div>
                   <h4 className="text-lg font-semibold text-slate-200 mb-2">
                     {item.title}
                   </h4>
-                  <p className="text-slate-400 text-sm">{item.des}</p>
+                  <p className="text-slate-400 text-sm flex-grow">{item.des}</p>
                 </motion.div>
               ))}
             </div>

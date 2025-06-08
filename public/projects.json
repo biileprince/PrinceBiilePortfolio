@@ -76,31 +76,5 @@
       "github": "#",
       "live": "#"
     }
-  },
-  {
-    "id": 6,
-    "title": "Weather Dashboard",
-    "description": "Interactive dashboard displaying current weather and forecasts",
-    "image": "./images/Project6.jpg",
-    "tags": ["Web", "Utility"],
-    "techStack": ["React", "TypeScript", "OpenWeather API"],
-    "features": ["Current weather", "7‑day forecast", "Location search"],
-    "links": {
-      "github": "#",
-      "live": "#"
-    }
-  },
-  {
-    "id": 7,
-    "title": "Task Manager",
-    "description": "Productivity app for creating and organizing tasks",
-    "image": "./images/Project7.jpg",
-    "tags": ["Web", "Productivity"],
-    "techStack": ["Angular", "Node.js", "PostgreSQL"],
-    "features": ["Task creation", "Due date reminders", "Drag‑and‑drop"],
-    "links": {
-      "github": "#",
-      "live": "#"
-    }
   }
 ]

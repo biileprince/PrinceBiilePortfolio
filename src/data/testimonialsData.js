@@ -19,14 +19,4 @@ export const testimonialsData = [
       platform: "Direct Contract · 2024",
     },
   },
-  {
-    name: "Alice Johnson",
-    role: "Product Manager at Innovate Inc",
-    image: "/images/testimonial2.jpg",
-    quote: "Their attention to detail and commitment to quality is unmatched.",
-    project: {
-      title: "Mobile App Development",
-      platform: "Freelance · 2022",
-    },
-  },
 ];

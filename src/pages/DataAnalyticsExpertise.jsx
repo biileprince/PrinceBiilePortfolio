@@ -1,72 +1,77 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { animations } from "../utils/animations";
-
 import {
   FaChartLine,
   FaDatabase,
   FaPython,
-  FaCloudscale,
   FaRegLightbulb,
+  FaFileExcel,
+  FaUniversity,
 } from "react-icons/fa";
-import { SiApachespark, SiTableau, SiSnowflake } from "react-icons/si";
-import Title from "../components/Title";
+import { SiPandas, SiNumpy, SiScikitlearn } from "react-icons/si";
+
+import Title from "./../components/Title";
 
 const DataAnalyticsExpertise = () => {
   const dataAnalyticsFeatures = [
     {
       id: 1,
-      title: "Advanced Data Visualization",
-      des: "Transform raw data into actionable insights through interactive dashboards and real-time reporting systems",
+      title: "Data Visualization",
+      des: "Creating insightful visualizations to communicate findings using Excel and BI tools",
       icon: <FaChartLine className="text-4xl text-blue-400" />,
-      path: "/analytics/visualization",
-      tech: ["Tableau", "Power BI", "D3.js", "Plotly"],
-      metrics: "40% faster decision-making cycle",
+      tech: ["Excel", "Power BI", "Matplotlib", "Seaborn"],
+      projects: [
+        "Student assessment reports",
+        "Academic performance dashboards",
+      ],
     },
     {
       id: 2,
-      title: "Predictive Analytics",
-      des: "Machine learning models for forecasting and pattern recognition with 92% accuracy rate",
-      icon: <FaPython className="text-4xl text-blue-400" />,
-      path: "/analytics/predictive",
-      tech: ["Python", "TensorFlow", "PyTorch", "Scikit-learn"],
-      metrics: "30% reduction in operational costs",
+      title: "Data Processing",
+      des: "Cleaning and preparing data for analysis using Python and SQL",
+      icon: <FaDatabase className="text-4xl text-blue-400" />,
+      tech: ["Python", "Pandas", "NumPy", "SQL"],
+      projects: ["Data cleaning for academic projects", "Database management"],
     },
     {
       id: 3,
-      title: "Big Data Processing",
-      des: "Scalable data pipelines handling 1M+ events/sec with real-time stream processing",
-      icon: <SiApachespark className="text-4xl text-blue-400" />,
-      path: "/analytics/big-data",
-      tech: ["Spark", "Hadoop", "Kafka", "Flink"],
-      metrics: "10x processing speed improvement",
+      title: "Statistical Analysis",
+      des: "Applying statistical methods to derive insights from academic and personal projects",
+      icon: <FaPython className="text-4xl text-blue-400" />,
+      tech: ["Statistical Modeling", "Forecasting Methods", "Regression"],
+      projects: [
+        "University coursework projects",
+        "Statistical modeling assignments",
+      ],
     },
     {
       id: 4,
-      title: "Business Intelligence",
-      des: "Enterprise-grade BI solutions with automated KPI tracking and anomaly detection",
-      icon: <FaRegLightbulb className="text-4xl text-blue-400" />,
-      path: "/analytics/bi",
-      tech: ["Looker", "Metabase", "Redash", "Superset"],
-      metrics: "25% increase in operational efficiency",
+      title: "Excel Automation",
+      des: "Developing automated solutions for data processing and reporting",
+      icon: <FaFileExcel className="text-4xl text-blue-400" />,
+      tech: ["VBA", "Formulas", "PivotTables", "Mail Merge"],
+      projects: ["Student report automation", "Grade calculation systems"],
     },
     {
       id: 5,
-      title: "Cloud Analytics",
-      des: "Modern data lakehouse architectures with petabyte-scale storage capabilities",
-      icon: <FaCloudscale className="text-4xl text-blue-400" />,
-      path: "/analytics/cloud",
-      tech: ["Snowflake", "BigQuery", "Redshift", "Databricks"],
-      metrics: "60% reduction in storage costs",
+      title: "Academic Analytics",
+      des: "Applying data analysis techniques to educational datasets and coursework",
+      icon: <FaUniversity className="text-4xl text-blue-400" />,
+      tech: [
+        "Educational Data Mining",
+        "Course Analysis",
+        "Performance Tracking",
+      ],
+      projects: ["University course projects", "Learning analytics"],
     },
     {
       id: 6,
-      title: "Data Warehousing",
-      des: "Optimized OLAP systems supporting complex analytical queries",
-      icon: <SiSnowflake className="text-4xl text-blue-400" />,
-      path: "/analytics/warehousing",
-      tech: ["Snowflake", "BigQuery", "Redshift", "PostgreSQL"],
-      metrics: "99.9% query success rate",
+      title: "Predictive Modeling",
+      des: "Building basic predictive models using Python libraries",
+      icon: <FaRegLightbulb className="text-4xl text-blue-400" />,
+      tech: ["Scikit-learn", "Basic ML Algorithms", "Model Evaluation"],
+      projects: ["Academic forecasting projects", "Course prediction models"],
     },
   ];
 
@@ -76,8 +81,8 @@ const DataAnalyticsExpertise = () => {
       className="w-full py-20 border-b border-slate-700/50"
     >
       <Title
-        title="Data Analytics & Insights"
-        des="Transforming Data into Strategic Assets"
+        title="Data Analytics Skills"
+        des="Transforming Data into Insights"
         align="center"
       />
 
@@ -90,41 +95,109 @@ const DataAnalyticsExpertise = () => {
             viewport={{ once: true, margin: "0px 0px -100px 0px" }}
             transition={{ delay: index * 0.1 }}
           >
-            <EnhancedFeatureCard item={item} metrics={item.metrics} />
+            <EnhancedFeatureCard item={item} />
           </motion.div>
         ))}
       </div>
 
-      {/* Additional Expertise Section */}
+      {/* Additional Skills Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-8 mt-20">
         <motion.div
           {...animations.fadeIn}
           className="bg-slate-800/50 p-8 rounded-xl border border-slate-700/50"
         >
           <h3 className="text-2xl font-semibold text-slate-200 mb-6">
-            Methodologies
+            Core Methodologies
           </h3>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="space-y-4">
-              <div className="text-blue-400 text-lg">✓ CRISP-DM Framework</div>
+              <div className="text-blue-400 text-lg">
+                ✓ Data Cleaning Process
+              </div>
               <p className="text-slate-400">
-                Structured approach for data mining projects ensuring business
-                relevance
+                Handling missing values, outlier detection, and data
+                normalization
               </p>
             </div>
             <div className="space-y-4">
-              <div className="text-blue-400 text-lg">✓ Agile Analytics</div>
+              <div className="text-blue-400 text-lg">
+                ✓ Exploratory Analysis
+              </div>
               <p className="text-slate-400">
-                Iterative development of analytical solutions with bi-weekly
-                deliverables
+                Using descriptive statistics and visualization to understand
+                data patterns
               </p>
             </div>
             <div className="space-y-4">
-              <div className="text-blue-400 text-lg">✓ DataOps Practices</div>
+              <div className="text-blue-400 text-lg">
+                ✓ Basic Predictive Modeling
+              </div>
               <p className="text-slate-400">
-                CI/CD pipelines for analytics with automated testing and
-                deployment
+                Implementing regression and classification models with
+                Scikit-learn
               </p>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+
+      {/* Skill Progression */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 mt-12">
+        <motion.div
+          {...animations.fadeIn}
+          className="bg-slate-800/50 p-8 rounded-xl border border-slate-700/50"
+        >
+          <h3 className="text-2xl font-semibold text-slate-200 mb-6">
+            Skill Development Path
+          </h3>
+          <div className="space-y-6">
+            <div>
+              <div className="flex justify-between mb-2">
+                <span className="text-slate-300">Python Data Analysis</span>
+                <span className="text-slate-400">Intermediate</span>
+              </div>
+              <div className="w-full bg-slate-700/50 rounded-full h-2.5">
+                <div
+                  className="bg-blue-400 h-2.5 rounded-full"
+                  style={{ width: "75%" }}
+                ></div>
+              </div>
+            </div>
+            <div>
+              <div className="flex justify-between mb-2">
+                <span className="text-slate-300">Excel & Power BI</span>
+                <span className="text-slate-400">Advanced</span>
+              </div>
+              <div className="w-full bg-slate-700/50 rounded-full h-2.5">
+                <div
+                  className="bg-blue-400 h-2.5 rounded-full"
+                  style={{ width: "85%" }}
+                ></div>
+              </div>
+            </div>
+            <div>
+              <div className="flex justify-between mb-2">
+                <span className="text-slate-300">Statistical Analysis</span>
+                <span className="text-slate-400">Intermediate</span>
+              </div>
+              <div className="w-full bg-slate-700/50 rounded-full h-2.5">
+                <div
+                  className="bg-blue-400 h-2.5 rounded-full"
+                  style={{ width: "70%" }}
+                ></div>
+              </div>
+            </div>
+            <div>
+              <div className="flex justify-between mb-2">
+                <span className="text-slate-300">Database Management</span>
+                <span className="text-slate-400">Intermediate</span>
+              </div>
+              <div className="w-full bg-slate-700/50 rounded-full h-2.5">
+                <div
+                  className="bg-blue-400 h-2.5 rounded-full"
+                  style={{ width: "65%" }}
+                ></div>
+              </div>
             </div>
           </div>
         </motion.div>
@@ -134,7 +207,7 @@ const DataAnalyticsExpertise = () => {
 };
 
 // Enhanced Feature Card Component
-const EnhancedFeatureCard = ({ item, metrics }) => {
+const EnhancedFeatureCard = ({ item }) => {
   return (
     <motion.div
       className="w-full h-full p-6 rounded-xl backdrop-blur-lg bg-slate-800/50 
@@ -143,14 +216,7 @@ const EnhancedFeatureCard = ({ item, metrics }) => {
       whileHover={animations.hoverScale}
     >
       <div className="space-y-6">
-        <div className="flex justify-between items-start">
-          <div className="text-blue-400">{item.icon}</div>
-          {metrics && (
-            <span className="px-3 py-1 text-xs bg-blue-400/10 text-blue-400 rounded-full">
-              {metrics}
-            </span>
-          )}
-        </div>
+        <div className="text-blue-400">{item.icon}</div>
 
         <div className="space-y-4">
           <h2 className="text-xl font-semibold text-slate-200">{item.title}</h2>
@@ -169,14 +235,20 @@ const EnhancedFeatureCard = ({ item, metrics }) => {
         </div>
       </div>
 
-      <div className="mt-6 pt-4 border-t border-slate-700/50">
-        <button className="w-full flex items-center justify-between group text-blue-400 hover:text-blue-300">
-          <span className="text-sm">View Case Studies</span>
-          <span className="transform group-hover:translate-x-1 transition-transform">
-            →
-          </span>
-        </button>
-      </div>
+      {item.projects && (
+        <div className="mt-6 pt-4 border-t border-slate-700/50">
+          <h4 className="text-sm font-medium text-slate-300 mb-2">
+            Applied in:
+          </h4>
+          <ul className="text-xs text-slate-400 space-y-1">
+            {item.projects.map((project, idx) => (
+              <li key={idx} className="flex items-center">
+                <span className="mr-1">•</span> {project}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </motion.div>
   );
 };

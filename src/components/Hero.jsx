@@ -18,6 +18,8 @@ import {
   SiJavascript,
   SiMongodb,
   SiPython,
+  SiPhp,
+  SiLaravel,
 } from "react-icons/si";
 import { motion } from "framer-motion";
 import { animations } from "../utils/animations";
@@ -34,10 +36,6 @@ const socialLinks = [
     link: "https://www.linkedin.com/in/prince-biile-75343b244",
   },
   { icon: FaGithub, link: "https://github.com/biileprince" },
-  {
-    icon: FaInstagram,
-    link: "https://www.instagram.com/princebiile?igsh=MTBrdWJtNW5peWQyNw==",
-  },
 ];
 
 const skillIcons = [
@@ -49,6 +47,9 @@ const skillIcons = [
   SiPython,
   TiVendorMicrosoft,
   SiFigma,
+
+  SiPhp,
+  SiLaravel,
 ];
 
 const Hero = () => {
@@ -138,7 +139,7 @@ const Hero = () => {
               <h2 className="text-sm uppercase tracking-wider text-slate-400 mb-4">
                 Find me on
               </h2>
-              <div className="flex gap-4">
+              <div className="flex gap-4 ">
                 {socialLinks.map(({ icon: Icon, link }, idx) => (
                   <motion.a
                     key={idx}
@@ -147,7 +148,7 @@ const Hero = () => {
                     rel="noopener noreferrer"
                     whileHover={animations.hoverScalebtn}
                     className="p-3 rounded-full backdrop-blur-lg bg-slate-700/50
-                               border border-slate-600 text-slate-300 hover:text-white cursor-pointer"
+                               border border-slate-600 text-slate-300 hover:text-white cursor-pointer "
                   >
                     <Icon />
                   </motion.a>
@@ -164,7 +165,7 @@ const Hero = () => {
                     key={idx}
                     whileHover={animations.hoverScale}
                     className="p-3 rounded-full backdrop-blur-lg bg-slate-700/50
-                               border border-slate-600 text-slate-300 hover:text-white cursor-pointer"
+                               border border-slate-600 text-slate-300 hover:text-white cursor-pointer text-3xl"
                   >
                     <Icon />
                   </motion.span>
