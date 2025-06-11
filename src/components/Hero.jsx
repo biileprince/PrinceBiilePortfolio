@@ -57,7 +57,7 @@ const Hero = () => {
   const [text] = useTypewriter({
     words: [
       "Aspiring Full Stack Developer",
-      "Cloud Computing Learner",
+      "AWS Cloud Computing Practitioner",
       "Data Analyst",
 
       "Tech Enthusiast",
