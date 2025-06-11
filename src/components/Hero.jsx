@@ -102,19 +102,19 @@ const Hero = () => {
               I'm a BSc. Information Technology student at the University of
               Cape Coast with a passion for full-stack development, data
               analysis, and cloud computing. I build intuitive, data-driven
-              applications using React, Node.js, MongoDB, and Tailwind CSS. With
-              a background in academic excellence and hands-on
-              projects—including an automated student assessment system—I strive
-              to solve real-world problems through clean code and practical
-              solutions.
+              applications using React, Node.js, PHP, MongoDB, and Tailwind CSS.
+              With a background in academic excellence and hands-on
+              projects—including an automated student assessment system— I
+              strive to solve real-world problems through clean code and
+              practical solutions.
             </p>
           </div>
 
           {/* Action Buttons */}
           <div className="flex flex-row gap-4">
             <motion.a
+              onClick={(e) => e.preventDefault()}
               href="/PrinceBiile_CV.pdf"
-              download
               whileHover={animations.hoverScalebtn}
               className="flex items-center gap-2 px-6 py-3 bg-blue-400/90 text-white rounded-lg
                          hover:bg-blue-400 transition-colors backdrop-blur-sm"
